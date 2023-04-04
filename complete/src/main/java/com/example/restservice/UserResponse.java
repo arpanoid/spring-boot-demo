@@ -11,4 +11,5 @@ public class UserResponse {
     private int total;
     private int total_pages;
     private List<User> data;
+    private SupportData support;
 }

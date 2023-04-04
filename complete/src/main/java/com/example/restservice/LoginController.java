@@ -29,6 +29,6 @@ public class LoginController {
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://reqres.in/api/users";
         ResponseEntity<UserResponse> response = restTemplate.getForEntity(url, UserResponse.class);
-        return response.getBody().getData().get(0).getFirst_name();
+        return response.getBody().getSupport().getUrl();
     }
 }
